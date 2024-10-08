@@ -1,0 +1,12 @@
+{
+    "project_name": "example",
+    "tag": "v0.0.0",
+    "previous_tag": "",
+    "version": "v0.1.0",
+    "commit": "1869b4455d572d3e3c7e00114586b47f184a2e35",
+    "date": "2024-09-27T12:10:11.314135185-05:00",
+    "runtime": {
+        "goos": "linux",
+        "goarch": "amd64"
+    }
+}

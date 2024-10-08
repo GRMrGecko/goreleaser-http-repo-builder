@@ -1,0 +1,47 @@
+[
+    {
+        "name": "metadata.json",
+        "path": "v0.1/metadata.json",
+        "internal_type": 30,
+        "type": "Metadata"
+    },
+    {
+        "name": "example",
+        "path": "v0.1/example_linux_amd64/example",
+        "goos": "linux",
+        "goarch": "amd64",
+        "internal_type": 4,
+        "type": "Binary",
+        "extra": {
+            "Binary": "example",
+            "Ext": "",
+            "ID": "example"
+        }
+    },
+    {
+        "name": "example_linux_amd64.tar.gz",
+        "path": "v0.1/example_linux_amd64.tar.gz",
+        "goos": "linux",
+        "goarch": "amd64",
+        "goamd64": "v1",
+        "internal_type": 1,
+        "type": "Archive",
+        "extra": {
+            "Binaries": [
+                "example"
+            ],
+            "Checksum": "sha256:9208c58af1265438c6894499847355bd5e77f93d04b201393baf41297d4680a3",
+            "Format": "tar.gz",
+            "ID": "default",
+            "Replaces": null,
+            "WrappedIn": "example_linux_amd64"
+        }
+    },
+    {
+        "name": "checksums.txt",
+        "path": "v0.1/checksums.txt",
+        "internal_type": 12,
+        "type": "Checksum",
+        "extra": {}
+    }
+]

@@ -17,6 +17,7 @@ type HttpAsset struct {
 
 // An individual release.
 type HttpRelease struct {
+	ID           int64        `yaml:"id"`
 	ReleaseID    int64        `yaml:"release_id"`
 	Name         string       `yaml:"name"`
 	TagName      string       `yaml:"tag_name"`

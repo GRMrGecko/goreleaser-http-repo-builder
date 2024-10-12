@@ -33,6 +33,11 @@ func (a *AddReleaseCmd) Run() error {
 		return err
 	}
 
+	// Update old releases to include the ID field.
+	for i, release := range manifest.Releases {
+		manifest.Releases[i].ID = release.ReleaseID
+	}
+
 	// Read metadata from goreleaser.
 	metadata, err := readMetadataFile(filepath.Join(a.Release, "metadata.json"))
 	if err != nil {
@@ -94,6 +99,7 @@ func (a *AddReleaseCmd) Run() error {
 	// Make the release.
 	manifest.LastReleaseID++
 	release := &HttpRelease{
+		ID:           manifest.LastReleaseID,
 		ReleaseID:    manifest.LastReleaseID,
 		Name:         metadata.Name,
 		TagName:      metadata.Version,

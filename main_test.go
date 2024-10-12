@@ -82,7 +82,7 @@ func TestAppFunctionality(t *testing.T) {
 	hfun.Write(d)
 	sum := hfun.Sum(nil)
 	hash := hex.EncodeToString(sum)
-	if hash != "01240af1d189ea540418903e15eb3068" {
+	if hash != "19a3a502913252635b3e0ea838846197" {
 		t.Errorf("hash isn't valid for manifest file: %s", hash)
 	}
 
@@ -187,7 +187,7 @@ func TestAppFunctionality(t *testing.T) {
 	hfun.Write(d)
 	sum = hfun.Sum(nil)
 	hash = hex.EncodeToString(sum)
-	if hash != "dfac4ec2fc35bb04c8f5f79e057dfbe9" {
+	if hash != "999c4156c2b5ff25f3491b86c8255cb5" {
 		t.Errorf("hash isn't valid for manifest file: %s", hash)
 	}
 
